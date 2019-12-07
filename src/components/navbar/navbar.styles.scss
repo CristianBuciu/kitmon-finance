@@ -1,0 +1,98 @@
+@import "../../sass/mixins";
+
+$hover-color: rgb(65, 95, 158);
+$links-color: rgb(59, 59, 59);
+
+.brand {
+  font-size: 2.5rem;
+  color: $links-color;
+  transition: all .3s;
+  font-weight: 700;
+  &:hover {
+    text-decoration: none;
+    color: $hover-color;
+    text-shadow: 0 .5rem 2rem rgba($color: #000000, $alpha: .5);
+  }
+}
+
+.navbar-content {
+  padding: 2rem 1rem;
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.7),
+    rgba(243, 243, 243, 0.7),
+    rgba(230, 230, 230, 0.7),
+    rgba(218, 218, 218, 0.7),
+    rgba(206, 206, 206, 0.7)
+  );
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-shadow: 0 .5rem 2rem rgba($color: #000000, $alpha: .3);
+}
+
+.nav-links {
+  color: $links-color;
+
+  font-size: 1.8rem;
+
+  padding-bottom: .2rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
+
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+
+  transition: all .3s;
+  &:hover {
+    color: $hover-color;
+    text-decoration: none;
+    text-shadow: 0 .5rem 2rem rgba($color: #000000, $alpha: .5);
+  }
+}
+
+.link-open {
+  color: $links-color;
+
+  font-size: 1.8rem;
+
+  padding-bottom: .2rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  transition: all .3s;
+  &:hover {
+    color: $hover-color;
+    text-decoration: none;
+    text-shadow: 0 .5rem 2rem rgba($color: #000000, $alpha: .5);
+  }
+}
+
+.my-navbar-logo {
+  width: 6rem;
+  margin-right: 2rem;
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.navbar-nav .nav-item {
+  margin: 1.5rem 0;
+}
+
+.navbar-toggler {
+  font-size: 2.5rem;
+  outline: none;
+  border: none;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+  &:active {
+    outline: none;
+    border: none;
+  }
+}

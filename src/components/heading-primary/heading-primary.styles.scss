@@ -1,0 +1,22 @@
+.heading {
+  color: white;
+
+  text-align: center;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  &__primary {
+    font-size: 5.5rem;
+    letter-spacing: 2rem;
+    padding-left: 2rem;
+    font-weight: 700;
+    &--sub {
+      font-size: 1.4rem;
+      display: inline-block;
+      letter-spacing: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
