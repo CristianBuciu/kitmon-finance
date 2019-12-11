@@ -1,0 +1,36 @@
+.mortgage-calculator {
+  margin-top: 15rem;
+  animation: mortgage 2s ease-out;
+  &__header {
+    display: flex;
+    justify-content: center;
+  }
+  &__img {
+    width: 10rem;
+    height: 10rem;
+  }
+  &__title {
+    margin-left: 2rem;
+    font-size: 4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  &__iframe {
+      margin-top:2rem;
+      overflow:hidden;
+  }
+}
+
+@keyframes mortgage {
+    from{
+        opacity:0;
+       
+    }
+    to {
+        opacity:1;
+        
+    }
+}

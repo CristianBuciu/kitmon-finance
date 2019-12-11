@@ -1,10 +1,18 @@
 import React from "react";
+import { Link, Route, Switch } from "react-router-dom";
+import MortgageCalculator from "../../components/mortgage-calculator/mortgage-calculator.component";
+import { Container } from "reactstrap";
+import "./tools.styles.scss";
 
 const Tools = props => {
   return (
-    <div>
-      <h1>Compound Calculator Page</h1>
-    </div>
+    <Container>
+      <div className="tools-page">
+        <Link className="tools-page__links" to="/tools/mortgage-calculator">
+          Mortgage Calculator
+        </Link>
+      </div>
+    </Container>
   );
 };
 
