@@ -33,6 +33,7 @@ class NavBar extends Component {
               alt="finance"
               src="http://icons.iconarchive.com/icons/graphicloads/flat-finance/256/dollar-stats-icon.png"
             />
+
             <Link className="brand" to="/">
               Kitmon Finance
             </Link>
@@ -44,7 +45,7 @@ class NavBar extends Component {
                     className={
                       this.state.isOpen === true ? "link-open" : "nav-links"
                     }
-                    to="/compound-calculator/"
+                    to="/tools"
                   >
                     Tools
                   </Link>

@@ -12,7 +12,7 @@ class Header extends React.Component {
         <Container>
           <HeadingPrimary
             title="All in one"
-            sub="Visualize your P2P platforms here"
+            sub="Visualize your P2P investments here"
           />
         </Container>
       </header>

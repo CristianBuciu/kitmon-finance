@@ -1,0 +1,49 @@
+.svg-analysis {
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+}
+
+#writting {
+  opacity: 1;
+  transition: all 1s linear;
+}
+
+.my-card:hover #writting {
+  opacity: 0;
+}
+#lupa {
+  transition: all 1s linear;
+  z-index: 1;
+}
+.my-card:hover #lupa {
+  transform: scale(2) translateX(-1.65rem) translateY(17.5rem);
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#line-graph {
+  opacity: 1;
+  transition: all .5s linear 1s;
+}
+
+.my-card:hover #line-graph {
+  opacity: 0;
+}
+
+#graph {
+  transform: scale(1);
+  transition: all .5s linear;
+}
+
+.my-card:hover #graph {
+  transform: scale(1.05) translateX(3rem);
+}
+#dots {
+  opacity: 1;
+  transition: all .5s linear 1s;
+}
+
+.my-card:hover #dots {
+  opacity: 0;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-const CompoundCalculator = props => {
+const Tools = props => {
   return (
     <div>
       <h1>Compound Calculator Page</h1>
@@ -8,4 +8,4 @@ const CompoundCalculator = props => {
   );
 };
 
-export default CompoundCalculator;
+export default Tools;
