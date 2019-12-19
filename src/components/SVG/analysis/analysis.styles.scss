@@ -1,3 +1,5 @@
+@import "../../../sass//mixins";
+
 .svg-analysis {
   width: 20rem;
   height: 20rem;
@@ -14,7 +16,6 @@
 }
 #lupa {
   transition: all 1s linear;
- 
 }
 .my-card:hover #lupa {
   transform: scale(2) translateX(-5rem) translateY(20rem);
@@ -24,7 +25,7 @@
 
 #line-graph {
   opacity: 1;
-  transition: all .5s linear;
+  transition: all 0.5s linear;
 }
 
 .my-card:hover #line-graph {
@@ -33,15 +34,21 @@
 
 #graph {
   transform: scale(1);
-  transition: all .5s linear;
+  transition: all 0.5s linear;
 }
 
 .my-card:hover #graph {
-  transform: scale(1.05) translateX(12rem);
+  transform: scale(1.05) translateX(8rem);
+  @include respond(tab-port) {
+    transform: scale(1.05) translateX(12rem);
+  }
+  @include respond(phone) {
+    transform: scale(1.05) translateX(11.5rem);
+  }
 }
 #dots {
   opacity: 1;
-  transition: all .5s linear ;
+  transition: all 0.5s linear;
 }
 
 .my-card:hover #dots {

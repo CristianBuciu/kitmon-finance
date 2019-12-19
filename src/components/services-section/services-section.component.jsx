@@ -6,6 +6,7 @@ import "./services-section.styles.scss";
 import Periodico from "../SVG/periodico/periodico";
 import Analysis from "../SVG/analysis/analysis";
 import Calculadora from "../SVG/calculadora/calculadora-completa";
+import Bitcoin from "../SVG/bitcoin/bitcoin";
 
 class ServicesSection extends Component {
   constructor(props) {
@@ -27,10 +28,10 @@ class ServicesSection extends Component {
       },
       {
         id: 2,
-        title: "Latest news and special offers ",
-        imgSrc: <Periodico />,
+        title: "Crypto loans platforms",
+        imgSrc: <Bitcoin />,
         description:
-          "Stay up to date with the latest news from the P2P world and get special offers."
+          "We offer the oportunity to monitor the interest rate and earnings from the crypto loans platforms supported at the moment. We are working hard to bring more platforms."
       },
       {
         id: 3,
@@ -39,6 +40,7 @@ class ServicesSection extends Component {
         description:
           "Stay up to date with the latest news from the P2P world and get special offers."
       }
+
     ];
   }
   render() {

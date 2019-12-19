@@ -31,7 +31,7 @@ class NavBar extends Component {
             <img
               className="my-navbar-logo"
               alt="finance"
-              src="http://icons.iconarchive.com/icons/graphicloads/flat-finance/256/dollar-stats-icon.png"
+              src="http://icons.iconarchive.com/icons/graphicloads/flat-finance/256/statistics-market-icon.png"
             />
 
             <Link className="brand" to="/">
