@@ -6,17 +6,30 @@
   top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-transform: uppercase;
+  
   &__primary {
+    line-height: .8;
     font-size: 5.5rem;
     letter-spacing: 2rem;
     padding-left: 2rem;
     font-weight: 700;
-    &--sub {
+    &--sub1 {
+      position: absolute;
+      top: 32%;
+      left: 78%;
+      margin-left: -2rem;
       font-size: 1.4rem;
       display: inline-block;
       letter-spacing: .8rem;
       padding-right: .8rem;
+    }
+    &--sub2 {
+      
+      font-size: 1.4rem;
+      display: inline-block;
+      letter-spacing: .8rem;
+      padding-right: .8rem;
+      margin-left: 2.2rem;
     }
   }
 }

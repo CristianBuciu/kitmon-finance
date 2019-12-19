@@ -1,11 +1,21 @@
 .tools-page {
+  display: flex;
   margin-top: 20rem;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
   &__links {
     font-size: 2rem;
-    color:black;
+    color:rgb(66, 66, 66);
     &:hover {
         text-decoration:none;
-        color:green;
+        color:rgb(70, 155, 127);
+        
     }
+  }
+  &__img {
+    width: 6rem;
+    margin-right: 2rem;
+   
   }
 }

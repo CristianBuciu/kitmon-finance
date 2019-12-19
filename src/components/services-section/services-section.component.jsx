@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import HeadingSecondary from "./../heading-secondary/heading-secondary.component";
-import { Container, Row, Col } from "reactstrap";
+import { Container } from "reactstrap";
 import Card from "../card/card.component";
 import "./services-section.styles.scss";
 import Periodico from "../SVG/periodico/periodico";
@@ -31,6 +31,13 @@ class ServicesSection extends Component {
         imgSrc: <Periodico />,
         description:
           "Stay up to date with the latest news from the P2P world and get special offers."
+      },
+      {
+        id: 3,
+        title: "Latest news and special offers ",
+        imgSrc: <Periodico />,
+        description:
+          "Stay up to date with the latest news from the P2P world and get special offers."
       }
     ];
   }
@@ -39,20 +46,20 @@ class ServicesSection extends Component {
       <Container>
         <div className="services-section">
           <HeadingSecondary text="Services We Offer" />
-          <Row>
+          <div className="grid-container">
             {this.state.map(card => {
               return (
-                <Col md="4">
+                <div className="card-grid">
                   <Card
                     id={card.id}
                     title={card.title}
                     imgSrc={card.imgSrc}
                     description={card.description}
                   />
-                </Col>
+                </div>
               );
             })}
-          </Row>
+          </div>
         </div>
       </Container>
     );

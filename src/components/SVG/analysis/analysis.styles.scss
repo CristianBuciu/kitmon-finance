@@ -14,17 +14,17 @@
 }
 #lupa {
   transition: all 1s linear;
-  z-index: 1;
+ 
 }
 .my-card:hover #lupa {
-  transform: scale(2) translateX(-1.65rem) translateY(17.5rem);
+  transform: scale(2) translateX(-5rem) translateY(20rem);
   transform-origin: center;
   transform-box: fill-box;
 }
 
 #line-graph {
   opacity: 1;
-  transition: all .5s linear 1s;
+  transition: all .5s linear;
 }
 
 .my-card:hover #line-graph {
@@ -37,11 +37,11 @@
 }
 
 .my-card:hover #graph {
-  transform: scale(1.05) translateX(3rem);
+  transform: scale(1.05) translateX(12rem);
 }
 #dots {
   opacity: 1;
-  transition: all .5s linear 1s;
+  transition: all .5s linear ;
 }
 
 .my-card:hover #dots {

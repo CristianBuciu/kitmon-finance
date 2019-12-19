@@ -1,9 +1,26 @@
 @import "../../sass/mixins";
 .services-section {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
   margin-top: 0rem;
-  height: 80rem;
+
+
+
+
+
   @include respond (phone) {
     padding: 2rem 0;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  @include respond (tab-port){
+    grid-template-columns: 1fr 1fr;
+  
+  }
+  @include respond(phone){
+    grid-template-columns: 1fr;
   }
 }

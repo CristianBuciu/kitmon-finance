@@ -8,9 +8,16 @@ const Tools = props => {
   return (
     <Container>
       <div className="tools-page">
-        <Link className="tools-page__links" to="/tools/mortgage-calculator">
-          Mortgage Calculator
+        <div className="flex-container">
+          <img
+            className="tools-page__img"
+            src="https://image.flaticon.com/icons/svg/1094/1094837.svg"
+            alt="calculadora"
+          />
+          <Link className="tools-page__links" to="/tools/mortgage-calculator">
+            Mortgage Calculator
         </Link>
+        </div>
       </div>
     </Container>
   );

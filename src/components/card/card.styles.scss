@@ -2,24 +2,22 @@
 .my-card {
   position: relative;
 
-  border-radius: 1rem;
-  height: 32rem;
+  border-radius: 0.5rem;
+
+  height: 50rem;
   overflow: hidden;
   padding: 2rem;
   margin-top: 4rem;
-  box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .2);
-  transition: all .2s linear;
-  @include respond(tab-port) {
-    height: 26rem;
-  }
-  @include respond (phone) {
-    height: 48rem;
-  }
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.047), 0 6.7px 5.3px rgba(0, 0, 0, 0.059), 0 12.5px 10px rgba(0, 0, 0, 0.064),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.067), 0 41.8px 33.4px rgba(0, 0, 0, 0.069), 0 100px 80px rgba(0, 0, 0, 0.07);
+
+  transition: all 0.2s linear;
+
   &:hover {
-    height: 50rem;
     cursor: pointer;
-    box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: .3);
-    transform: translateY(-1rem);
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.036), 0 6.7px 5.3px rgba(0, 0, 0, 0.038),
+      0 12.5px 10px rgba(0, 0, 0, 0.043), 0 22.3px 17.9px rgba(0, 0, 0, 0.05), 0 41.8px 33.4px rgba(0, 0, 0, 0.059),
+      0 100px 80px rgba(0, 0, 0, 0.07);
   }
   &--title {
     font-size: 2.4rem;
@@ -27,8 +25,8 @@
     text-align: center;
     color: black;
     font-weight: 700;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
   &--text {
     z-index: 1;
@@ -38,6 +36,7 @@
 
   &--img-container {
     text-align: center;
+    margin-top: 1.5rem;
   }
 
   &--triangle-top {
@@ -45,40 +44,54 @@
     border-radius: 1rem;
     width: 100%;
     height: 100%;
-    opacity: .5;
+    opacity: 0.5;
     background-image: linear-gradient(
       to top,
-      #670ede,
-      #4448ef,
-      #1366f9,
-      #007ffc,
-      #1595fb
+      #fff33b,
+      #ffdf35,
+      #ffcc34,
+      #ffb935,
+      #fca739,
+      #fa9938,
+      #f68c39,
+      #f27e3a,
+      #f17038,
+      #ef6138,
+      #ec5138,
+      #e93e3a
     );
     clip-path: polygon(50% 50%, 0 0, 100% 0);
     position: absolute;
     top: 0;
     left: 0;
-    transition: all .5s;
+    transition: all 0.5s;
   }
   &--triangle-bottom {
     z-index: -2;
     border-radius: 1rem;
     width: 100%;
     height: 100%;
-    opacity: .5;
+    opacity: 0.5;
     background-image: linear-gradient(
-      to top,
-      #2f32e9,
-      #1247ed,
-      #0058ef,
-      #0066ef,
-      #0173ed
+      to bottom,
+      #fff33b,
+      #ffdf35,
+      #ffcc34,
+      #ffb935,
+      #fca739,
+      #fa9938,
+      #f68c39,
+      #f27e3a,
+      #f17038,
+      #ef6138,
+      #ec5138,
+      #e93e3a
     );
     clip-path: polygon(50% 50%, 0 100%, 100% 100%);
     position: absolute;
     top: 0;
     left: 0;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 }
 
@@ -94,22 +107,18 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(0.2rem);
   background-image: linear-gradient(
     to top,
-    rgba(192, 192, 192, 0.8),
-    rgba(223, 223, 223, 0.8),
-    rgba(239, 239, 239, 0.8),
-    rgba(255, 255, 255, 0.8)
+    rgba(192, 192, 192, 0.9),
+    rgba(223, 223, 223, 0.9),
+    rgba(239, 239, 239, 0.9),
+    rgba(255, 255, 255, 0.9)
   );
   @include respond(tab-port) {
     padding: 0;
   }
-}
-
-.my-card:hover .my-card--img {
-  transform: scale(1.2);
 }

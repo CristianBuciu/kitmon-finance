@@ -10,10 +10,7 @@ class Header extends React.Component {
         <div className="triangle-1" />
         <div className="triangle-2" />
         <Container>
-          <HeadingPrimary
-            title="All in one"
-            sub="Visualize your P2P investments here"
-          />
+          <HeadingPrimary />
         </Container>
       </header>
     );
