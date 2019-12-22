@@ -35,11 +35,32 @@ class NavBar extends Component {
             />
 
             <Link className="brand" to="/">
-              Kitmon Finance
+              K<span className="logo-slide">it</span>M<span className="logo-slide">on</span>{" "}
+              Finance
             </Link>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
+                <NavItem>
+                  <Link
+                    className={
+                      this.state.isOpen === true ? "link-open" : "nav-links"
+                    }
+                    to="/crypto"
+                  >
+                    P2P Platforms
+                  </Link>
+                </NavItem>
+                <NavItem>
+                  <Link
+                    className={
+                      this.state.isOpen === true ? "link-open" : "nav-links"
+                    }
+                    to="/crypto"
+                  >
+                    Crypto
+                  </Link>
+                </NavItem>
                 <NavItem>
                   <Link
                     className={
